@@ -41,6 +41,16 @@
   )
 )
 
+;; Problem 1
+(println
+  (reduce +
+    (map
+      #(countScore %1) (map #(convert %1) readFile))
+  )
+)
+
+
+;; Problem 2
 (println
   (reduce +
     (map
